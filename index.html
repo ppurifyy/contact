@@ -27,16 +27,25 @@
   <!-- 베너 -->
   <style type="text/css">
     .banner {
-      position: absolute;
-      width: 15%;
+      position: fixed;
+      width: 100%;
+      z-index: 10;
+      background-color: rgba( 255, 255, 255, 0 );
+      width: 100px;
+      left: 46%;
+      top: 8px
     }
   </style>
-  <!-- 네비게이션메뉴 -->
-  <style type="text/css">
+  <!-- 네비게이션메뉴 --> 
+   <style type="text/css">
     #topMenu {
       height: 35px;
-      width: 800px;
+      width: 400px;
       float: right;
+      right: 15px;
+      top: 10px;
+      position: fixed;
+      z-index: 10;
     }
     #topMenu ul {
       list-style-type: none;
@@ -44,8 +53,8 @@
       padding: 0px;
     }
     #topMenu ul li {
-      color: darkgray;
-      background-color: white;
+      color: #747474;
+      background-color: rgba( 255, 255, 255, 0 );
       line-height: 35px;
       vertical-align: middle;
       text-align: center;
@@ -57,20 +66,21 @@
       text-decoration: none;
       display: block;
       width: 77px;
-      font-size: 15px;
+      font-size: 13px;
       font-weight: bold;
       font-family: "Trebuchet MS", Dotum;
     }
-    .MenuLink {color: darkgray;}
+    .MenuLink {color: #BDBDBD;}
     .topMenuLi:hover .MenuLink {
-      color: black;
-      background-color: white;
+      color: #877800;
+      background-color: rgba( 255, 255, 255, 0 );
     }
     .subMenuLink {
-      color: lightgray;
-      background-color: white;
+      color: #989898;
+      background-color: rgba( 255, 255, 255, 0 );
       border: solid 1px white;
       margin-top: -1px;
+      border-color: rgba( 255, 255, 255, 0 );
     }
     .subMenu {
       position: absolute;
@@ -85,7 +95,7 @@
       height: 60px;
     }
     .subMenuLink:hover {
-      color: gray;
+      color: #D5D5D5;
     }
   </style>
   <!-- 본문 -->
